@@ -40,13 +40,8 @@
   apt-cache policy <package name> will show the version details
   ```
 
-- 
-
-  ```
-  sudo apt install aptitude -y
-  ```
-
   
+
 
 ### Dkpg
 
