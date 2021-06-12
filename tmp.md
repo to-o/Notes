@@ -144,3 +144,8 @@ sudo apt install pkg-config intltool libglib2.0-dev ppp-dev libpolkit-gobject-1-
 sudo apt install meson qt4-dev-tools build-essential libdbus-glib-1-dev libgirepository1.0-dev mobile-broadband-provider-info
 ```
 
+ 252 x 123qwe
+
+213 x qwe123
+
+111 
