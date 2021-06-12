@@ -121,6 +121,7 @@
   git remote add origin http://172.17.66.163/wangsong/libkysset-1.1kord.git
   git push -u origin --all
   git push -u origin --tags
+  
   ```
 
 - git branch -D/-d branch_2 删除本地的分支 -D没有合并也可以删除 -d不会
