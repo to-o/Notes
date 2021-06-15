@@ -149,3 +149,18 @@ sudo apt install meson qt4-dev-tools build-essential libdbus-glib-1-dev libgirep
 213 x qwe123
 
 111 
+
+
+
+ITP测试
+
+| 开始时间        | 结束时间     | 测试台数 | 奔溃数 | 备注 |
+| :-------------- | ------------ | -------- | ------ | ---- |
+| 6月12号17点30分 | 6月15号8点30 | 3        | 0      |      |
+|                 |              |          |        |      |
+|                 |              |          |        |      |
+
+
+
+
+
