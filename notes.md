@@ -189,3 +189,16 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
 ```
 
+```
+#是否是能log日志跟踪
+if [ $OPEN_SCP ];then
+	#传输各种脚本到设备中
+	spawn scp -r ./atuo_itp $username@$realip:/home/kylin/桌面/test
+
+	expect {
+			"yes/no" { send "yes\r"; exp_continue }
+			"password" { send "$password\r" };
+	}
+fi
+```
+
