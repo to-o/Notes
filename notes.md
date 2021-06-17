@@ -154,7 +154,9 @@
 ```sh
 ssh-keygen -t rsa -C "wangsong@kylinos.cn"
 
-cat /home/kylin/.ssh/id_rsa.pub
+kcat /home/kylin/.ssh/id_rsa.pub
+
+windows cat C:/Users/Axel/.ssh/id_rsa.pub
 ```
 
 ### samba
@@ -202,3 +204,4 @@ if [ $OPEN_SCP ];then
 fi
 ```
 
+58
