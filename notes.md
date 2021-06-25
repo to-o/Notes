@@ -154,7 +154,7 @@
 ```sh
 ssh-keygen -t rsa -C "wangsong@kylinos.cn"
 
-kcat /home/kylin/.ssh/id_rsa.pub
+cat /home/kylin/.ssh/id_rsa.pub
 
 windows cat C:/Users/Axel/.ssh/id_rsa.pub
 ```
@@ -162,7 +162,7 @@ windows cat C:/Users/Axel/.ssh/id_rsa.pub
 ### samba
 
 ```
-sudo apt install samba
+sudo apt install samba 
 sudo smbpasswd -a $USERNAM
 sudo service smbd restart
 ```
