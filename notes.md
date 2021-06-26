@@ -191,7 +191,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
 ```
 
-```
+```sh
 #是否是能log日志跟踪
 if [ $OPEN_SCP ];then
 	#传输各种脚本到设备中
@@ -203,5 +203,3 @@ if [ $OPEN_SCP ];then
 	}
 fi
 ```
-
-58
