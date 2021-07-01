@@ -66,21 +66,43 @@ journalctl -f -u NetworkManager
 sudo apt install pkg-config intltool libglib2.0-dev ppp-dev libpolkit-gobject-1-dev libpolkit-agent-1-dev libselinux1-dev libaudit-dev libgnutls28-dev  uuid-dev libsystemd-dev libudev-dev libgirepository1.0-dev gobject-introspection libpsl-dev libcurl4-gnutls-dev gtk-doc-tools libyaml-perl libglib2.0-doc libmm-glib-dev   libndp-dev libreadline-dev libnewt-dev  libteam-dev valac libbluetooth-dev libjansson-dev libnss3-dev -y
 ```
 
-```
 
-```
 
-ITP测试
+### OTA
 
-| 开始时间    | 结束时间  | 测试台数 | 奔溃数 | 备注 |
-| :---------- | --------- | -------- | ------ | ---- |
-| 6/12/ 17.30 | 6/15 8.30 | 3        | 0      |      |
-| 6/16 21.00  | 6/17 9.00 | 3        | 0      |      |
-|             |           |          |        |      |
+- https://dev.kylin.com/kylin-desktop/v101/+source/kylin-sourceinfo-server
 
 
 
-- wifi 相同的IP 配置DNS时 也不生效
+出现问题的原因是区域更新中damage region计算错误，现已修复这个问题。
+
+测试建议：
+
+多种情形下反复测试，类似的闪屏问题都和damage 计算相关。
+
+影响区域：
+
+显示闪烁，或导致鼠标移动出现轨迹。
+
+
+
+单元测试】通过
+【硬件环境】9A0笔记本
+【软件环境】0628版本ISO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
