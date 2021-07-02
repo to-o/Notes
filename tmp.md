@@ -94,9 +94,21 @@ sudo apt install pkg-config intltool libglib2.0-dev ppp-dev libpolkit-gobject-1-
 
 
 
+### 周报
 
 
 
+
+
+  QPoint cur = QCursor::pos();
+
+
+
+  int cx = cur.x()+10;
+
+  int cy = cur.y()+10;
+
+  QCursor::setPos(cx,cy);
 
 
 
