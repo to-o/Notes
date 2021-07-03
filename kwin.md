@@ -38,3 +38,41 @@
 
 ![image-20210630145230597](picture/image-20210630145230597.png)
 
+
+
+### 外部Kwin资料
+
+- kwin_API：https://develop.kde.org/docs/plasma/kwin/api/ 
+- KDE：https://develop.kde.org/docs/
+- 窗口的基础解释：https://docs.microsoft.com/zh-cn/windows/win32/winmsg/about-windows?redirectedfrom=MSDN
+
+
+
+
+
+### XKB
+
+- 文件名xkb.cpp 类名xkb
+- 简介：用于键盘的映射、键盘的布局、ALT、SHIFT、键盘灯一些控制
+- 库：libxkbcommon-dev 
+- 特性：
+  - enhanced support for *[modifiers](https://en.wikipedia.org/wiki/Modifier_key)* ([Alt](https://en.wikipedia.org/wiki/Alt_key), ⇧ [Shift](https://en.wikipedia.org/wiki/Shift_key), etc.);
+  - better treatment of *key groups* (typically [keyboard layouts](https://en.wikipedia.org/wiki/Keyboard_layout));
+  - extended control of keyboard indicators ([LEDs](https://en.wikipedia.org/wiki/LED)) and [bells](https://en.wikipedia.org/wiki/Bell_character);
+  - various new keyboard parameters (controls);
+  - association of actions (of a particular kind) to keys.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

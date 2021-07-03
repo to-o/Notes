@@ -74,44 +74,6 @@ sudo apt install pkg-config intltool libglib2.0-dev ppp-dev libpolkit-gobject-1-
 
 
 
-出现问题的原因是区域更新中damage region计算错误，现已修复这个问题。
-
-测试建议：
-
-多种情形下反复测试，类似的闪屏问题都和damage 计算相关。
-
-影响区域：
-
-显示闪烁，或导致鼠标移动出现轨迹。
-
-
-
-单元测试】通过
-【硬件环境】9A0笔记本
-【软件环境】0628版本ISO
-
-
-
-
-
-### 周报
-
-
-
-
-
-  QPoint cur = QCursor::pos();
-
-
-
-  int cx = cur.x()+10;
-
-  int cy = cur.y()+10;
-
-  QCursor::setPos(cx,cy);
-
-
-
 
 
 
