@@ -72,11 +72,24 @@ sudo apt install pkg-config intltool libglib2.0-dev ppp-dev libpolkit-gobject-1-
 
 - https://dev.kylin.com/kylin-desktop/v101/+source/kylin-sourceinfo-server
 
+Map cursors from X11 to Wayland
+
+Tracking cursor changes in X11. Whenever the cursor image changes, the
+image is read and a wl_buffer is created with the content of the X11
+cursor. This buffer is attached to a surface used as a cursor image.
+
+As a memory pool for the cursor buffers a temporary file is created and
+mmapped.
+
+All created cursors are cached but not yet removed from the cache. Some
+cleanup code would be useful also to ensure that our shared memory pool
+doesn't overflow.
 
 
 
 
 
+40cb4f5cd Map cursors from X11 to Wayland
 
 
 
