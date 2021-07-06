@@ -87,9 +87,63 @@ doesn't overflow.
 
 
 
-
+```export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin
+```
 
 40cb4f5cd Map cursors from X11 to Wayland
+
+
+
+### Dbus
+
+1. Bus Name 总线名称（com.myconpany.Test）连接到dbus会给与分配，但是为了好记采用绑定的方式
+2. 对象路径（/com/mytest）路径名称的Dbus的应用程序都包含一些对象，当接收到一条消息的时候发给的一个对象不是整个程序，这个在整个会话中也是唯一的
+3. 接口（org.freedwsktop.test）每个对象有一个或多个接口，接口时一组方法和信号
+4. 方法和信号 方法就是一个函数代码有输入和输出，信号是一种广播，dbus有四种类型的消息：方法调用、方法返回、信号、错误
+
+```c
+Address –> [Bus Name] –> Path –> Interface –> Method
+```
+
+
+
+代码执行路径
+
+- 创建一个session D-bus的连接
+- 进行连接判断 是否连接上 设置连接超时等等 连接次数判断等操作
+- 注册过滤器 过滤器是对所有传入的信息运行的处理程序（dbus服务最关键的一个函数，它处理输入队列分发的所有消息。判断消息是否合法以及是否有注册的上层用户的handler来处理 ）
+- 设置BUS name：test.wei.dest
+- 服务启动就开始计算生命周期 增加失败计数和失败的计数
+- 异步任务队列 `进程`模式和`线程`模式处理消息（同时增加信号的处理 包括子进程的回收机制）
+- 注册DBUS接口 (使用xml定义D-Bus接口)在D-Bus中，可以将D-Bus接口定义用XML格式表述处理，并利用工具，自动生成头文件，给出工整的调用方式。
+- 注册DBUS信号
+
+
+
+之后的处理过程
+
+- 建立一个D-bus
+- 动态加载动态连接库
+- 注册自己的包Dbus的方法
+- 事件循环
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
