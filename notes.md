@@ -29,7 +29,7 @@
 - 必要的依赖
 
   ```sh
-  编包需要的库 sudo apt install debhelper devscripts automake dh-make build-essential  
+  编包需要的库 sudo apt install debhelper devscripts automake dh-make build-essential -y 
   
   ```
 
@@ -203,3 +203,23 @@ if [ $OPEN_SCP ];then
 	}
 fi
 ```
+
+
+
+
+
+### 编译条件
+
+- cmake添加-g 在文件 CMakeLists.txt添加下面一条语句 add_definitions("-Wall -g")
+- QMAKE_CXXFLAGS += -g
+
+
+
+
+
+
+
+
+
+
+
