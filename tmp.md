@@ -136,7 +136,7 @@ Address –> [Bus Name] –> Path –> Interface –> Method
 
 
 ```
-sudo apt install qtpositioning5-dev qtpositioning5-dev 
+sudo apt install qtpositioning5-dev qt
 ```
 
 
