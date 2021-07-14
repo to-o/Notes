@@ -215,13 +215,28 @@ fi
 
 
 
+### Go
+
+- 下载：https://golang.org/doc/install
+
+- 安装：tar -C /usr/local -xzf go1.16.6.linux-arm64.tar.gz
+
+- 服务器代码：https://dev.kylin.com/kylin-desktop/v101/+source/kylin-sourceinfo-server
+
+- 环境变量
+
+  ```shell
+  export GOROOT=/usr/local/go
+  export GOBIN=$GOROOT/bin
+  export PATH=$PATH:$GOBIN
+  export GOPATH=$HOME/share/G
+  
+  
+  ```
+
+  
 
 
-复现条件：只Wayland应用，鼠标不移动，之后放大窗口（鼠标不能移动移动的话会更新鼠标坐标变正常），再按右键弹出的窗口出现偏移
-
-bug原因：鼠标窗口放大后鼠标的坐标没有更新，无法获取鼠标的绝对坐标（maptoglobal 方法无法获取坐标的绝对坐标）
-
-解决办法：未找到解决办法涉及QTbase和QtWayland，目前问题从应用到窗管再排查到QT上，此bug从两方面进行解决，一窗口放大或缩小的时候更新鼠标的坐标，二使用鼠标的绝对坐标。
 
 
 
