@@ -72,7 +72,7 @@ sudo apt install pkg-config intltool libglib2.0-dev ppp-dev libpolkit-gobject-1-
 
 ### OTA
 
-- https://dev.kylin.com/kylin-desktop/v101/+source/kylin-sourceinfo-server
+- 
 
 Map cursors from X11 to Wayland
 
@@ -148,8 +148,75 @@ bug原因：鼠标窗口放大后鼠标的坐标没有更新，无法获取鼠�
 
 
 ```
-insert into mysql.user(Host,User,Password) values(“localhost”,”test”,password(“1″));
+查询用户：SELECT User, Host, plugin FROM mysql.user; 
+添加用户：CREATE USER 'kylin_sql'@'localhost' IDENTIFIED BY '123qwe';
+创建数据库：CREATE DATABASE IF NOT EXISTS TEST DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+添加权限：GRANT ALL PRIVILEGES ON *.* TO 'kylin_sql'@'localhost';
+FLUSH PRIVILEGES;
+
+
+
+mysql> USE mysql;
 ```
+
+
+
+### OTA
+
+- 源管理器服务端
+
+  主要为了来更新源信息的
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+工作总结：试用期间首先进行入职培训及公司业务了解，之后进行了Debian编包学习及工控机项目开发任务；如获取显示主屏接口开发以及在外设管理服务中新增包管理D-Bus接口供上层调用等任务。之后两个月在海南出差主要解决华为9X0相关的显示bug解决出现的问题，以及相关的OTA升级相关的学习。
+
+转正想法：在转正之后希望自己在技术能力方面可以稳定提升，争取可以在项目中发挥出更多的作用。
+
+
+
+
+
+
 
 
 

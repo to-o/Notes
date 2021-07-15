@@ -221,22 +221,22 @@ fi
 
 - 安装：tar -C /usr/local -xzf go1.16.6.linux-arm64.tar.gz
 
-- 服务器代码：https://dev.kylin.com/kylin-desktop/v101/+source/kylin-sourceinfo-server
-
 - 环境变量
 
   ```shell
   export GOROOT=/usr/local/go
   export GOBIN=$GOROOT/bin
   export PATH=$PATH:$GOBIN
-  export GOPATH=$HOME/share/G
-  
-  
+  export GOPATH=$HOME/share/Go
   ```
-
   
 
 
+
+### OTA
+
+- 服务器代码：https://dev.kylin.com/kylin-desktop/v101/+source/kylin-sourceinfo-server
+- 
 
 
 
