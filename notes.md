@@ -228,8 +228,8 @@ fi
   export GOBIN=$GOROOT/bin
   export PATH=$PATH:$GOBIN
   export GOPATH=$HOME/share/Go
+  export GOPROXY=https://goproxy.cn
   ```
-  
 
 
 
@@ -242,5 +242,5 @@ fi
 
 
 
-
+运行：nvme format /dev/nvme0 -n 1
 
