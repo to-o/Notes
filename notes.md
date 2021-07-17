@@ -236,11 +236,46 @@ fi
 ### OTA
 
 - 服务器代码：https://dev.kylin.com/kylin-desktop/v101/+source/kylin-sourceinfo-server
-- 
+
+- 客户端：https://dev.kylinos.cn/kylin-desktop/+source/kylin-update-manager/5.7.1kordhw1
+
+-  基础操作
+
+  ```shell
+  重启服务：sudo service mysql restart && sudo systemctl restart kylin-sourceinfo-server
+  修改服务器地址：sudo vi /var/lib/kylin-software-properties/template/kylin-source-update.conf
+  
+  
+  ```
+  
 
 
 
 
 
-运行：nvme format /dev/nvme0 -n 1
+### Wayland
+
+协议文档：https://wayland.app/protocols/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

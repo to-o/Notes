@@ -196,37 +196,19 @@ mysql> USE mysql;
 
 
 
+运行：nvme format /dev/nvme0 -n 1
+
+sudo sdparm --inquiry --page=sn /dev/nvme0n1
 
 
 
 
 
+stat
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-工作总结：试用期间首先进行入职培训及公司业务了解，之后进行了Debian编包学习及工控机项目开发任务；如获取显示主屏接口开发以及在外设管理服务中新增包管理D-Bus接口供上层调用等任务。之后两个月在海南出差主要解决华为9X0相关的显示bug解决出现的问题，以及相关的OTA升级相关的学习。
-
-转正想法：在转正之后希望自己在技术能力方面可以稳定提升，争取可以在项目中发挥出更多的作用。
-
-
+deb https://archive1.kylinos.cn/kylin/KYLIN-ALL 10.1-pv main restricted universe multiversellllllllllllllll
 
 
 
