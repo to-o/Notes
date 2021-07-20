@@ -202,14 +202,13 @@ sudo sdparm --inquiry --page=sn /dev/nvme0n1
 
 
 
-
+127.0.0.1:port//client/45984185811f-8898ada3c94eb62f3089abf0389e13f2/
 
 stat
 
 
 
 deb https://archive1.kylinos.cn/kylin/KYLIN-ALL 10.1-pv main restricted universe multiversellllllllllllllll
-
 
 
 
