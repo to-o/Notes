@@ -256,14 +256,13 @@ fi
 
 - https://github.com/ActivityWatch/activitywatch
 
-- ```
-  sudo apt install nodejs -y
-  sudo apt install npm -y
+- ```sh
+  sudo apt install nodejs -y && sudo apt install npm -y && sudo apt install python3-pip
   ```
 
 
 
-
+ERROR: launchpadlib 1.10.13 requires testresources, which is not installed.
 
 ### Wayland
 
