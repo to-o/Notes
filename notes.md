@@ -246,6 +246,8 @@ fi
   修改服务器地址：sudo vi /var/lib/kylin-software-properties/template/kylin-source-update.conf
   
   测试：curl http://localhost:59546/client/45984185811f-8898ada3c94eb62f3089abf0389e13f2/
+  curl http://localhost:5600/api/0/buckets/
+  
   ```
   
 - 源管理器服务端主要用于更新源信息与源管理器客户端相互通信 进行修改源信息
