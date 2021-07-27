@@ -272,13 +272,11 @@ ERROR: launchpadlib 1.10.13 requires testresources, which is not installed.
 
 
 
+  MACs hmac-sha2-512
 
+  User kylin
 
-
-
-
-
-
+  IdentityFile "C:\Users\Axel\.ssh\id_rsa"
 
 
 
