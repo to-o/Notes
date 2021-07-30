@@ -71,8 +71,6 @@ update_infos. json
 sudo apt-get dist-upgrade --assume-no -o Debug::NoLocking=1
 ```
 
- &outBuf = 0x400015e770: {buf = {array = 0x4000190000 "Reading package lists...\nBuilding dependency t…, 
-
 
 
 
