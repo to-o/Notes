@@ -87,7 +87,7 @@
 - ##### Git 全局设置
 
   ```shell
-  git config --global user.name "王松"
+  git config --global user.name "w"
   git config --global user.email "wangsong@kylinos.cn"
   ```
 

@@ -328,7 +328,7 @@ POST /api/0/buckets/<bucket_id>/heartbeat
 ### install
 
 ```shell
-    sudo apt install python3-appdirs python3-deprecation python3-iso8601 python3-persist-queue python3-xlib  python3-peewee python3-flask python3-flask-cors python3-pymongo python3-pip python3-pyqt5
+sudo apt install python3-appdirs python3-deprecation python3-iso8601 python3-persist-queue python3-xlib  python3-peewee python3-flask python3-flask-cors python3-pymongo python3-pip python3-pyqt5
 
 pip install tomlkit python_json_logger flask_restx logger pynput timeslot
 ```
