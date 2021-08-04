@@ -120,9 +120,9 @@ Qt界面展示Windows上类似的软件`ManicTime`
 
 
 
-##### aw_watcher_afk模块
+##### aw_watcher_window模块
 
-`目的`：检测鼠标键盘是否是活跃决定是否是AFK（away from keyboard 简称长时间没有移动鼠标或者敲击键盘）
+`目的：` 观察焦点窗口应用名称和窗口标题
 
 `建立流程:`
 
@@ -130,9 +130,27 @@ Qt界面展示Windows上类似的软件`ManicTime`
 2. 设置log配置记录
 3. 调用ActivityWatchClient实现一个客户端的建立（`ActivityWatchClient` 一个围绕aw-server REST API的方便的封装器。是与服务器交互的推荐方式。）
 4. 创建一个create_bucket，注意一个观察器建立一个bucket，类似于用于存放所有数据的一个bucket
-5. 心跳循环发送当前活跃窗口的应用和标题名字（通过`Xlib`）
+5. 心跳循环发送当前焦点窗口的应用和标题名字（通过`Xlib`）
+   - 首选获取活跃的窗口的ID
+   - 再通过窗口ID拿到这个窗口的句柄
+   - 再获取窗口的类型也就是窗口的应用名称appname
+   - 拿到窗口的标题
 
 <img src="picture/image-20210724165802157.png" alt="image-20210724165802157" style="zoom:80%;" />
+
+
+
+##### aw_watcher_afk模块
+
+`目的`：检测鼠标键盘是否是活跃决定是否是AFK（away from keyboard 简称长时间没有移动鼠标或者敲击键盘）
+
+
+
+
+
+
+
+
 
 
 
