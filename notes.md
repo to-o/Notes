@@ -38,9 +38,40 @@
   ```
   sudo apt install ukui-kwin = 版本 安装指定的版本
   apt-cache policy <package name> will show the version details
+  
   ```
 
-  
+#### 设备信息
+
+```sh
+一、主机ip信息如下:
+	主机ip:172.17.129.112
+二、磁盘信息如下:
+	该服务器共有
+	磁盘:/dev/sr0 的序列号为:476021509361
+	磁盘:/dev/nvme0n1 的序列号为:50026B7683B97FB4
+三、内存信息如下:
+	系统总内存为:8078480 KB
+	系统当前可用内存为:6119256 KB
+	系统交换空间总内存为:9692156 KB
+	系统交换空间当前可用内存为:9692156 KB
+四、CPU信息如下:
+	 CPU的厂商,编号,主频为: Phytium,FT-2000/4
+	该服务器共有
+	每个物理CPU内核个数:
+hostinfo_check1_1.sh:49: no matches found: /etc/sysconfig/network-scripts/ifcfg-*
+log:1: 权限不够: /var/log/hostinfo_check.log
+hostinfo_check1_1.sh:54: no matches found: /etc/sysconfig/network-scripts/ifcfg-*
+四、网卡信息如下:
+	该服务器共配置网卡:
+五、网卡mac地址信息如下:
+	网卡:enaftgm1i0 的mac地址为:3c:6a:2c:bf:98:80
+	网卡:sit0 的mac地址为:00:00:00:00
+	网卡:lo 的mac地址为:00:00:00:00:00:00
+	网卡:ip6tnl0 的mac地址为:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+```
+
+
 
 
 ### Dkpg
@@ -251,6 +282,26 @@ fi
   ```
   
 - 源管理器服务端主要用于更新源信息与源管理器客户端相互通信 进行修改源信息
+
+
+
+### source
+
+```sh
+deb http://archive.kylinos.cn/kylin/KYLIN-ALL .test-10.1 main restricted universe multiverse
+deb http://archive.kylinos.cn/kylin/partner 10.1 main
+deb http://archive2.kylinos.cn/deb/kylin/production/PART-V10-SP1/custom/partner/V10-SP1 default all
+
+172.20.191.4 archive.launchpad.dev answers.dev.kylin.com archive.dev.kylin.com api.dev.kylin.com bazaar.dev.kyli
+n.com bazaar-internal.dev.kylin.com blueprints.dev.kylin.com bugs.dev.kylin.com code.dev.kylin.com feeds.dev.kyl
+in.com lists.dev.kylin.com ppa.dev.kylin.com private-ppa.dev.kylin.com translations.dev.kylin.com xmlrpc-private
+.dev.kylin.com xmlrpc.dev.kylin.com dev.kylin.com testopenid.dev ppa.launchpad.dev
+172.20.191.4 keyserver.dev.kylin.com
+172.20.191.3 builder.kylin.com
+172.20.191.29 oauth.kylin.com
+172.20.191.22 zsk.kylin.com
+172.17.66.61 zentao.tjsource.xyz zentao.kylin.com
+```
 
 
 

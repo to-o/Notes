@@ -73,5 +73,13 @@ sudo apt-get dist-upgrade --assume-no -o Debug::NoLocking=1
 
 
 
+FailedStatus
 
+
+
+func (m *Manager) updateSource
+
+
+
+func (p *APTSystem) UpdateSource(jobId string)
 

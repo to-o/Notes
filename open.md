@@ -127,14 +127,30 @@ Qt界面展示Windows上类似的软件`ManicTime`
 `建立流程:`
 
 1. 导入配置包括轮询时间设置
+
 2. 设置log配置记录
+
 3. 调用ActivityWatchClient实现一个客户端的建立（`ActivityWatchClient` 一个围绕aw-server REST API的方便的封装器。是与服务器交互的推荐方式。）
+
 4. 创建一个create_bucket，注意一个观察器建立一个bucket，类似于用于存放所有数据的一个bucket
+
 5. 心跳循环发送当前焦点窗口的应用和标题名字（通过`Xlib`）
    - 首选获取活跃的窗口的ID
    - 再通过窗口ID拿到这个窗口的句柄
    - 再获取窗口的类型也就是窗口的应用名称appname
    - 拿到窗口的标题
+   
+6. json数据发送的格式
+
+   ```js
+   event = {
+     "timestamp": "2016-04-27T15:23:55Z",  // ISO8601 格式的时间戳
+     "duration": 1,                     // 持续时间
+     "data": {"app": "kylin-calculator", "title": "麒麟计算器"},  // JSON对象, 事件的类型
+   }
+   ```
+
+   
 
 <img src="picture/image-20210724165802157.png" alt="image-20210724165802157" style="zoom:80%;" />
 
@@ -349,6 +365,8 @@ POST /api/0/buckets/<bucket_id>/heartbeat
 sudo apt install python3-appdirs python3-deprecation python3-iso8601 python3-persist-queue python3-xlib  python3-peewee python3-flask python3-flask-cors python3-pymongo python3-pip python3-pyqt5
 
 pip install tomlkit python_json_logger flask_restx logger pynput timeslot
+
+sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
 
 
