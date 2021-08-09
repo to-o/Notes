@@ -152,6 +152,41 @@ Qt界面展示Windows上类似的软件`ManicTime`
 
    
 
+7. 合并事件或者直接提交到数据库
+
+   合并事件的要求
+
+   1. 事件的类型发生变化 比如kylin-calculator -> ublock 
+   2. 超过最大的发送请求间隔事件，默认10S duration > 10S 
+   
+8. 使用`异步任务队列`处理发送事件请求(未深入了解)
+
+9. GET/POST REST 请求到服务端进行存储 
+
+   window窗口的抓包
+
+   ```http
+   POST /api/0/buckets/aw-watcher-window_pc/heartbeat?pulsetime=2.0
+   ```
+
+   ![image-20210809103113397](picture/image-20210809103113397.png)
+
+   
+
+   ```http
+   POST /api/0/buckets/aw-watcher-afk_pc/heartbeat?pulsetime=185
+   ```
+
+   ![image-20210809103300737](picture/image-20210809103300737.png)
+
+10. `存在的问题`
+
+    无法获取Wayland应用的窗口名称，由于wayland的协议不支持导致的问题，Wayland协议为了保证安全不能直接获取焦点窗口，导致无法获取，目前的解决办法是通过Kwin提供Dbus的接口来获取窗口。
+
+
+
+
+
 <img src="picture/image-20210724165802157.png" alt="image-20210724165802157" style="zoom:80%;" />
 
 
@@ -160,7 +195,7 @@ Qt界面展示Windows上类似的软件`ManicTime`
 
 `目的`：检测鼠标键盘是否是活跃决定是否是AFK（away from keyboard 简称长时间没有移动鼠标或者敲击键盘）
 
-
+此模块的与window类似，不同在于
 
 
 
@@ -298,6 +333,16 @@ POST /api/0/buckets/<bucket_id>/heartbeat
 
 
 
+##### aw_transform
+
+包含了在查询语言中所使用的一些事件类型转换
+
+
+
+
+
+
+
 #### 代码结构
 
 `aw-core` ActivityWatch 的核心库 其他的库都会调用这个库的组件 
@@ -368,6 +413,8 @@ pip install tomlkit python_json_logger flask_restx logger pynput timeslot
 
 sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
+
+其他安装
 
 
 
