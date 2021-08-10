@@ -266,9 +266,11 @@ fi
 
 ### OTA
 
-- 服务器代码：https://dev.kylin.com/kylin-desktop/v101/+source/kylin-sourceinfo-server
+- v服务器代码：https://dev.kylin.com/kylin-desktop/v101/+source/kylin-sourceinfo-server
 
 - 客户端：https://dev.kylinos.cn/kylin-desktop/+source/kylin-update-manager/5.7.1kordhw1
+
+- V10:https://dev.kylinos.cn/kylinos-desktop/v100/+source/kylin-update-manager
 
 -  基础操作
 
@@ -282,6 +284,8 @@ fi
   ```
   
 - 源管理器服务端主要用于更新源信息与源管理器客户端相互通信 进行修改源信息
+
+- 如果是最新的v10版本，可以修改/var/lib/kylin-software-properties/template/important.list 里面加一个包名比如，kylin-video，然后sudo chattr +i /var/lib/kylin-software-properties/template/important.list  然后apt remove kylin-video 再打开就可以检测到更新
 
 
 

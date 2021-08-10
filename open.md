@@ -201,6 +201,14 @@ Qt界面展示Windows上类似的软件`ManicTime`
 
 
 
+##### aw_server
+
+1. `Flask` 用于搭建web服务使用GET和POST RESTAPI等等
+2. `Peewee` 数据库存储所有的数据
+3. 
+
+
+
 
 
 
@@ -336,6 +344,32 @@ POST /api/0/buckets/<bucket_id>/heartbeat
 ##### aw_transform
 
 包含了在查询语言中所使用的一些事件类型转换
+
+```sh
+window = flood(query_bucket(find_bucket("aw-watcher-window_")));
+
+afk = flood(query_bucket(find_bucket("aw-watcher-afk_")));
+afk = filter_keyvals(afk, "status", ["not-afk"]);
+events = filter_period_intersect(window, afk);
+events = simplify_window_titles(events, "title");
+RETURN = {"events": events};
+```
+
+
+
+###### `concat`**(***events1: list***,** *events2: list***)** **→** **List****[**[aw_core.models.Event](https://docs.activitywatch.net/en/latest/api/python.html#aw_core.models.Event)**]**
+
+串联两个事件
+
+###### `exclude_keyvals`**(***events: list***,** *key: str***,** *vals: list***)** **→** **List****[**[aw_core.models.Event](https://docs.activitywatch.net/en/latest/api/python.html#aw_core.models.Event)**]**
+
+排除键值
+
+
+
+
+
+
 
 
 
