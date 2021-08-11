@@ -118,7 +118,7 @@ hostinfo_check1_1.sh:54: no matches found: /etc/sysconfig/network-scripts/ifcfg-
 - ##### Git 全局设置
 
   ```shell
-  git config --global user.name "w"
+  git config --global user.name "wa"
   git config --global user.email "wangsong@kylinos.cn"
   ```
 
@@ -185,7 +185,7 @@ hostinfo_check1_1.sh:54: no matches found: /etc/sysconfig/network-scripts/ifcfg-
 ```sh
 ssh-keygen -t rsa -C "wangsong@kylinos.cn"
 
-cat /home/kylin/.ssh/id_rsa.pub
+cat /home/lxy/.ssh/id_rsa.pub
 
 windows cat C:/Users/Axel/.ssh/id_rsa.pub
 ```
@@ -266,11 +266,13 @@ fi
 
 ### OTA
 
-- v服务器代码：https://dev.kylin.com/kylin-desktop/v101/+source/kylin-sourceinfo-server
+- v10 SP1服务器代码：https://dev.kylin.com/kylin-desktop/v101/+source/kylin-sourceinfo-server
 
-- 客户端：https://dev.kylinos.cn/kylin-desktop/+source/kylin-update-manager/5.7.1kordhw1
+- v10 SP1客户端：https://dev.kylinos.cn/kylin-desktop/+source/kylin-update-manager/5.7.1kordhw1
 
-- V10:https://dev.kylinos.cn/kylinos-desktop/v100/+source/kylin-update-manager
+- V10客户端:https://dev.kylinos.cn/kylinos-desktop/v100/+source/kylin-update-manager
+
+- V10-PPA:dput dev:kylinos-desktop/v100-proposed
 
 -  基础操作
 
@@ -285,7 +287,11 @@ fi
   
 - 源管理器服务端主要用于更新源信息与源管理器客户端相互通信 进行修改源信息
 
-- 如果是最新的v10版本，可以修改/var/lib/kylin-software-properties/template/important.list 里面加一个包名比如，kylin-video，然后sudo chattr +i /var/lib/kylin-software-properties/template/important.list  然后apt remove kylin-video 再打开就可以检测到更新
+- 条件：
+
+  如果是最新的v10版本，可以修改/var/lib/kylin-software-properties/template/important.list 里面加一个包名比如，kylin-video，然后sudo chattr +i /var/lib/kylin-software-properties/template/important.list  然后apt remove kylin-video 再打开就可以检测到更新
+
+- 
 
 
 
@@ -335,7 +341,13 @@ ERROR: launchpadlib 1.10.13 requires testresources, which is not installed.
 
 
 
+get_app_changelog
 
+
+
+app_msg["version"] app_msg.CANDIDATEVERSION
+
+app_msg["installversion"] app_msg.INSTALLEDVERSION
 
 
 
