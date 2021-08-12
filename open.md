@@ -375,8 +375,6 @@ RETURN = {"events": events};
 
 
 
-
-
 #### 代码结构
 
 `aw-core` ActivityWatch 的核心库 其他的库都会调用这个库的组件 

@@ -118,7 +118,7 @@ hostinfo_check1_1.sh:54: no matches found: /etc/sysconfig/network-scripts/ifcfg-
 - ##### Git 全局设置
 
   ```shell
-  git config --global user.name "wa"
+  git config --global user.name "wangsong"
   git config --global user.email "wangsong@kylinos.cn"
   ```
 
@@ -348,6 +348,14 @@ get_app_changelog
 app_msg["version"] app_msg.CANDIDATEVERSION
 
 app_msg["installversion"] app_msg.INSTALLEDVERSION
+
+
+
+signal_type == "apt" and process_type == "apt_finish"
+
+
+
+kylin Developemt Team 
 
 
 
