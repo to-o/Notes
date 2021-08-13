@@ -74,6 +74,8 @@ hostinfo_check1_1.sh:54: no matches found: /etc/sysconfig/network-scripts/ifcfg-
 
 
 
+
+
 ### Dkpg
 
 - 实例
@@ -311,6 +313,7 @@ in.com lists.dev.kylin.com ppa.dev.kylin.com private-ppa.dev.kylin.com translati
 172.20.191.29 oauth.kylin.com
 172.20.191.22 zsk.kylin.com
 172.17.66.61 zentao.tjsource.xyz zentao.kylin.com
+172.20.191.209 gitlab2.kylin.com
 ```
 
 
@@ -325,37 +328,17 @@ in.com lists.dev.kylin.com ppa.dev.kylin.com private-ppa.dev.kylin.com translati
 
 
 
-ERROR: launchpadlib 1.10.13 requires testresources, which is not installed.
+### 版本信息
 
-### Wayland
+【V10】
+系列代号定为 v100，changelog写v100 
+版本系列地址：https://launchpad.dev/kylinos-desktop/v100
+源码包查看地址：https://dev.kylinos.cn/+kylin/archive_publish?distro=kylinos-desktop&series=v100
+上传源码：dput dev:kylinos-desktop/v100-proposed xxxx_source.changes
 
-协议文档：https://wayland.app/protocols/
-
-
-
-  MACs hmac-sha2-512
-
-  User kylin
-
-  IdentityFile "C:\Users\Axel\.ssh\id_rsa"
-
-
-
-get_app_changelog
-
-
-
-app_msg["version"] app_msg.CANDIDATEVERSION
-
-app_msg["installversion"] app_msg.INSTALLEDVERSION
-
-
-
-signal_type == "apt" and process_type == "apt_finish"
-
-
-
-kylin Developemt Team 
-
-
+【V10-SP1】
+系列代号定为 v101，changelog写v101 
+版本系列地址： https://launchpad.dev/kylin-desktop/v101 
+源码包查看地址：https://launchpad.dev/+kylin/archive_publish?distro=kylin-desktop&series=v101 
+上传源码: dput dev:kylin-desktop/v101-proposed xxxx_source.changes
 

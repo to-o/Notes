@@ -212,15 +212,6 @@ deb https://archive1.kylinos.cn/kylin/KYLIN-ALL 10.1-pv main restricted universe
 
 
 
-46836ae 修复解析Debian.gz changelog出现超出索引的问题
-1554970 修改72374bug，关于的信息不符合
-b608e5e bug:71915
-18ae18c 修改changelog版本
-a916c27 修复使用索引下表来获取值，导致获取changelog错误，出现在存储到数据库的处理中
-d7d0cd5 init rpo
-
-
-
 
 
 
